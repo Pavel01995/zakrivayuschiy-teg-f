@@ -57,7 +57,7 @@ transition: box-shadow 0.3s ease;
   position: relative;
   z-index: 1;
   fill: var(--bg-color);       
-    mix-blend-mode: difference;
+mix-blend-mode: difference;
 }
 
 
