@@ -12,7 +12,10 @@
 --text-color:rgba(0, 0, 0, 1);
 --stroke-color:rgba(255, 255, 255, 1);
 --button-text-hover:rgba(255, 255, 255, 1);
-
+--contour__heart:rgba(0, 0, 0, 1);
+--heart__sparks:rgba(255, 0, 0, 1);
+--heart__hover:rgba(0, 0, 0, 1);
+--heart__accent:rgba(255, 0, 0, 1);
 --multy-gradient: 
   repeating-linear-gradient(
     to right,

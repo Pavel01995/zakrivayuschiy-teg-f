@@ -13,7 +13,7 @@
 
 
 
-
+ 
 
 .general__button:focus{
  outline:none;
@@ -65,4 +65,117 @@ mix-blend-mode: difference;
 .card__icon-button:focus-visible {
 outline: 2px solid var(--bd-color);
 transition: 0.3 ease;
+}
+
+
+
+
+.sparks {
+  opacity: 0; 
+}
+
+.contour{
+  transition: fill 0.1s linear;
+}
+
+
+.core {
+  fill: transparent;
+  transition: fill 0.3s linear 0.03s;
+}
+
+
+.main-body{
+fill: transparent;
+  transition: fill 0.3s linear;
+}
+
+
+
+
+.card__icon-button:hover .core {
+  fill: var(--heart__hover);
+  transition: fill 0.3s linear 0s;
+}
+
+
+.card__icon-button:hover .main__body {
+  fill:var(--heart__hover) ;
+  transition: fill 0.3s linear 0.05s;
+}
+
+
+
+
+
+.card__icon-button:active  .core{
+ fill: var(--heart__accent);
+  transition: fill 0.3s linear 0s;
+
+
+}
+
+.card__icon-button:active .main__body{
+  fill:var(--heart__accent) ;
+  transition: fill 0.3s linear 0.05s;
+
+
+}
+
+.card__icon-button:active .contour{
+fill:var(--heart__accent) ;
+transition: fill 0.3s linear 0.06s;
+
+}
+
+
+
+.card__icon-button .like-icon.is-liked .core{
+ fill: var(--heart__accent);
+  transition: fill 0.3s linear 0s;
+
+
+}
+
+.card__icon-button .like-icon.is-liked .main__body{
+  fill:var(--heart__accent) ;
+  transition: fill 0.3s linear 0.05s;
+
+
+}
+
+.card__icon-button .like-icon.is-liked .contour{
+fill:var(--heart__accent) ;
+transition: fill 0.3s linear 0.06s;
+
+}
+
+
+.like-icon.is-liked .heart {
+  animation: heart-scale 0.3s ease-in 0.1s 1;
+}
+
+
+.like-icon.is-liked .sparks {
+  animation: sparks-fly 0.3s ease-in 0.3s 1;
+}
+
+
+@keyframes heart-scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}
+
+
+@keyframes sparks-fly {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
