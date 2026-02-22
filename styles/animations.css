@@ -74,42 +74,42 @@
 }
 
 .card__icon-button:hover .core {
-    fill: var(--heart__hover);
+    fill: var(--heart-hover);
     transition: fill 0.3s linear 0s;
 }
 
 .card__icon-button:hover .main__body {
-    fill: var(--heart__hover);
+    fill: var(--heart-hover);
     transition: fill 0.3s linear 0.05s;
 }
 
 .card__icon-button:active .core {
-    fill: var(--heart__accent);
+    fill: var(--heart-accent);
     transition: fill 0.3s linear 0s;
 }
 
 .card__icon-button:active .main__body {
-    fill: var(--heart__accent);
+    fill: var(--heart-accent);
     transition: fill 0.3s linear 0.05s;
 }
 
 .card__icon-button:active .contour {
-    fill: var(--heart__accent);
+    fill: var(--heart-accent);
     transition: fill 0.3s linear 0.06s;
 }
 
 .card__icon-button .like-icon.is-liked .core {
-    fill: var(--heart__accent);
+    fill: var(--heart-accent);
     transition: fill 0.3s linear 0s;
 }
 
 .card__icon-button .like-icon.is-liked .main__body {
-    fill: var(--heart__accent);
+    fill: var(--heart-accent);
     transition: fill 0.3s linear 0.05s;
 }
 
 .card__icon-button .like-icon.is-liked .contour {
-    fill: var(--heart__accent);
+    fill: var(--heart-accent);
     transition: fill 0.3s linear 0.06s;
 }
 

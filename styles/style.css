@@ -11,7 +11,7 @@
 */
 
 .page {
-    font-family: var(--font-variation);
+    font-family: var(--font-variation,"sans-serif");
     font-variation-settings:
         "wght" var(--fw-p),
         "slnt" var(--slant);
@@ -23,9 +23,8 @@
 }
 
 .header {
-    font-family: var(--font-regular);
+    font-family: var(--font-regular, "sans-serif");
     text-transform: uppercase;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,12 +37,20 @@
     justify-content: center;
     align-items: center;
     width: var(--multy-block-width);
-    min-height: var(--header__block-height);
+    min-height: var(--header-block-height);
     gap: 20px;
     background-color: var(--bg-color);
     border: 2px solid var(--bd-color);
     margin-block-start: 100px;
     margin-block-end: 101px;
+}
+
+
+.header__logo-link{
+outline:none;
+text-decoration: none;
+color: inherit;
+
 }
 
 .header__title {
@@ -61,10 +68,11 @@
     gap: clamp(2.9375rem, 2.849rem + 0.3756vw, 3.1875rem);
 }
 
-.article {
+.article__main{
     border: 2px solid var(--bd-color);
     width: var(--multy-block-width);
     background-color: var(--bg-color);
+    
 }
 
 .article__titles {
@@ -72,16 +80,19 @@
         "wght" var(--fw-h),
         "slnt" var(--slant);
     padding: 4px 10px;
-    font-size: 18px;
+    font-size: 1.125rem;
+ 
 }
 
 .article__paragraphs {
     display: flex;
-    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.1667;
     gap: 25px;
     flex-direction: column;
     margin: 25px 25px 0;
     min-width: var(--paragraph-width);
+   
 }
 
 .card__container-buttons {
@@ -107,8 +118,9 @@
 }
 
 .button__text {
-    font-family: var(--font-regular);
-    font-size: 14px;
+    font-family: var(--font-regular,"sans-serif");
+    font-size: 0.875rem;
+    line-height:0.9;
 }
 
 .card__image {
@@ -150,12 +162,12 @@
 }
 
 .label {
+     font-family: var(--font-regular "sans-serif");
     position: absolute;
     top: 25px;
     right: 25px;
-    font-family: var(--font-regular);
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 0.875rem;
     mix-blend-mode: hard-light;
     color: var(--text-color);
     opacity: 50%;
@@ -171,7 +183,7 @@
         text-shadow: none;
         -webkit-text-stroke: 0.5px var(--stroke-color);
         color: color-mix(in srgb, var(--text-color), transparent 50%);
-        font-family: var(--font-regular);
+       
     }
 }
 
@@ -214,7 +226,7 @@
     align-items: center;
     width: var(--dialog-window);
     height: 191px;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-transform: uppercase;
     padding: 30px 40px;
     gap: 30px;
