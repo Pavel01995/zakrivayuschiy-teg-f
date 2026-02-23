@@ -23,13 +23,12 @@
 }
 
 .header {
-   
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--text-color);
-font-family: var(--font-regular), sans-serif; 
+    font-family: var(--font-regular), sans-serif; 
 
 }
 
