@@ -52,20 +52,11 @@
 
 .general__button:focus-visible {
     transition: 0.3s ease;
-   
-    }
+}
 
-
-    .card__icon-button:focus-visible{
-      
-        outline: 2px solid var(--bd-color);
- 
-  
-
-    }
-
-
-
+.card__icon-button:focus-visible {
+    outline: 2px solid var(--bd-color);
+}
 
 .sparks {
     opacity: 0;

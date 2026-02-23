@@ -1,5 +1,5 @@
 :root {
-    --font-regular: "PressStart2P-Regular";
+    --font-regular: "PressStart2P";
     --font-variation: "Inter-Variable", "sans-serif";
     --fw-p: 410;
     --fw-h: 715;
@@ -22,7 +22,7 @@
     --header-block-height: clamp(327px, 312.56px + 3.85vw, 370px);
     --article-images-height: clamp(375px, 256.56px + 30.52vw, 700px);
     --paragraph-width: clamp(20.0625rem, 12.9102rem + 30.5164vw, 40.375rem);
-    --gap-article: clamp(51px, 49.59px + 0.38vw, 57px);
+    --gap-article:  clamp(51px, 49.59px + 0.38vw, 55px);
     --button-save-width: clamp(306px, 2.723vw + 295.79px, 335px);
     --button-save-height: clamp(55px, -2.723vw + 94.21px, 84px);
     --dialog-window: clamp(341px, 336.775px + 1.127vw, 353px);
