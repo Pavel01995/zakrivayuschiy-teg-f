@@ -65,7 +65,7 @@ color: inherit;
     flex-direction: column;
     align-items: center;
     color: var(--text-color);
-    gap: clamp(2.9375rem, 2.849rem + 0.3756vw, 3.1875rem);
+    gap: var(--gap-article);
 }
 
 .article__main{
@@ -95,6 +95,7 @@ color: inherit;
    
 }
 
+
 .card__container-buttons {
     display: flex;
     justify-self: flex-end;
@@ -102,19 +103,37 @@ color: inherit;
     margin-block-end: 25px;
     margin-block-start: 25px;
     align-items: center;
+   gap: 8px;
 }
 
 .card__like-button {
-    width: 130px;
-    height: 38px;
-    background-color: var(--bg-color);
+  width: 130px;
+  height: 38px;
     cursor: pointer;
+    border:2px solid var(--bd-color);
+    background-color: var(--bg-color);
+    
 }
 
 .card__icon-button {
     border: none;
     background: transparent;
     cursor: pointer;
+    width: 39px;
+  height: 36px;
+
+  
+    
+}
+
+
+
+.like-icon{
+display: flex;
+flex-shrink: 0;
+justify-self: center;
+
+    
 }
 
 .button__text {
@@ -128,6 +147,8 @@ color: inherit;
     border-top: 2px solid var(--bd-color);
     border-bottom: 2px solid var(--bd-color);
     height: var(--article-images-height);
+    margin: 0;
+    padding: 0;
 }
 
 .image__common {
@@ -187,13 +208,7 @@ color: inherit;
     }
 }
 
-.card__container-buttons_save {
-    display: flex;
-    outline: 2px solid var(--bd-color);
-    flex-wrap: wrap;
-    line-height: 0.9;
-    margin-block-end: 100px;
-}
+
 
 .button__text_save {
     display: flex;
@@ -202,10 +217,16 @@ color: inherit;
     gap: 7px;
 }
 
+
+
+
 .button__save {
     width: var(--button-save-width);
     height: var(--button-save-height);
     cursor: pointer;
+    border: 2px solid var(--bd-color);
+     margin-block-end: 100px;
+     background-color: var(--bg-color);
 }
 
 .disk__icon-save {
@@ -236,6 +257,8 @@ color: inherit;
     transition: opacity 5s ease-in-out;
     background-color: var(--bg-color);
     outline: 2px solid var(--bd-color);
+    font-family: var(--font-regular, "sans-serif");
+    
 }
 .dialog__content {
     display: flex;
@@ -256,12 +279,15 @@ color: inherit;
     background-color: var(--bg-color);
     cursor: pointer;
     text-transform: uppercase;
+    line-height: 0.9;
+    border: 2px solid var(--bd-color);
 }
 
 @media (width > 375px) {
     .button__text_save {
-        display: flex;
+       display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
+        
     }
 }
