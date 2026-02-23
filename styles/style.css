@@ -11,7 +11,7 @@
 */
 
 .page {
-    font-family: var(--font-variation, "sans-serif");
+    font-family: var(--font-variation), sans-serif;
     font-variation-settings:
         "wght" var(--fw-p),
         "slnt" var(--slant);
@@ -23,12 +23,13 @@
 }
 
 .header {
-    font-family: var(--font-regular, "sans-serif");
+   
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--text-color);
+font-family: var(--font-regular), sans-serif; 
 }
 
 .header__block {
@@ -43,6 +44,7 @@
     border: 2px solid var(--bd-color);
     margin-block-start: 100px;
     margin-block-end: 100px;
+ 
 }
 
 .header__logo-link {
@@ -124,7 +126,7 @@
 }
 
 .button__text {
-    font-family: var(--font-regular, "sans-serif");
+    font-family: var(--font-regular), sans-serif;
     font-size: 0.875rem;
     line-height: 0.9;
 }
@@ -170,7 +172,7 @@
 }
 
 .label {
-    font-family: var(--font-regular "sans-serif");
+    font-family: var(--font-regular),sans-serif;
     position: absolute;
     top: 25px;
     right: 25px;
@@ -238,7 +240,7 @@
     transition: opacity 5s ease-in-out;
     background-color: var(--bg-color);
     outline: 2px solid var(--bd-color);
-    font-family: var(--font-regular, "sans-serif");
+    font-family: var(--font-regular), sans-serif;
 }
 .dialog__content {
     display: flex;
