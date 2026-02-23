@@ -1,0 +1,10 @@
+{
+  "name": "zakrivayuschiy-teg",
+  "version": "1.0.0",
+  "description": "Практикум фронтенд проект — закривающий тег",
+  "scripts": {
+    "test": "echo \"Запуск тестов Practicum\" && exit 0"
+  },
+  "author": "Pavel",
+  "license": "MIT"
+}
